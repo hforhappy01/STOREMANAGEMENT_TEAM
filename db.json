@@ -1,0 +1,300 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupdata": [
+    {
+      "firstname": 1,
+      "lastname": "some comment",
+      "mobile": 1,
+      "email": "ppr@gmail.com",
+      "paaword": 1234
+    }
+  ],
+  "signup": [
+    {
+      "firstname": 1,
+      "lastname": "some comment",
+      "mobile": 1,
+      "email": "ppr@gmail.com",
+      "paaword": 1234
+    }
+  ],
+  "adminpanel": [
+    {
+      "id": 1,
+      "bookname": "sdfs",
+      "bookcatagory": "vsdvs",
+      "bookprice": 676890,
+      "bookauthor": "nsbndfsbd"
+    },
+    {
+      "id": 2,
+      "bookname": "sdgs",
+      "bookcatagory": "vdfb",
+      "bookprice": 454,
+      "bookauthor": "fdbdfn"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "productdata": [
+    {
+      "id": 1,
+      "title": "Think and grow Reach",
+      "price": 200.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://qph.fs.quoracdn.net/main-qimg-de13515282dab9dcc3c1175974367335-c",
+      "rating": {
+        "rate": 3.9,
+        "count": 190
+      }
+    },
+    {
+      "id": 2,
+      "title": "Journey-practice book",
+      "price": 400.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://bi-coa.org/img/7cd7824bd39c402746cd7d49dafc6853.jpg",
+      "rating": {
+        "rate": 5,
+        "count": 120
+      }
+    },
+    {
+      "id": 3,
+      "title": "Spririual Liberation",
+      "price": 1000.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "religion",
+      "image": "https://th.bing.com/th/id/OIP.abKM5-zVgwMhR6ImRjU6cgHaLb?pid=ImgDet&rs=1",
+      "rating": {
+        "rate": 5,
+        "count": 180
+      }
+    },
+    {
+      "id": 4,
+      "title": "Life's Amazing Secreates",
+      "price": 700,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://i1.wp.com/www.mrdhukkad.com/wp-content/uploads/2019/06/4-1.jpg?ssl=1",
+      "rating": {
+        "rate": 5,
+        "count": 100
+      }
+    },
+    {
+      "id": 5,
+      "title": "Open a Book Grow Your Mind",
+      "price": 2000,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://cdn10.bigcommerce.com/s-ehq9w/products/4017/images/8190/cm1023_Grow_Your_Mind_Thumb__77686.1428339966.1280.1280.jpg?c=2",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 6,
+      "title": "Black and White and dead All over",
+      "price": 200.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://th.bing.com/th/id/R.af9122de080d1cbf3f1911a3646bb39b?rik=AbmXNbToKv8Wrw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-x3FVuDLNDo0%2fVpMAGXdunOI%2fAAAAAAAAXNU%2fvt3BDVse-wA%2fs1600%2fLostHat.jpg&ehk=zvIibFG%2fRH3cdhl5JNkJ%2bNAQ2k2qCwcQ4fsGEar720I%3d&risl=&pid=ImgRaw&r=0",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 7,
+      "title": "Reading By The Colors",
+      "price": 500,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://i.ebayimg.com/images/g/m9QAAOSwblZZL7Zb/s-l640.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 600
+      }
+    },
+    {
+      "id": 8,
+      "title": "Bible Crossword Puzzles",
+      "price": 200.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51PXNVMZNSL.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 180
+      }
+    },
+    {
+      "id": 9,
+      "title": "Why we do What We do",
+      "price": 200.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://th.bing.com/th/id/OIP.lJahEDzax9XrviVAWNpZFgHaLY?pid=ImgDet&rs=1",
+      "rating": {
+        "rate": 3,
+        "count": 190
+      }
+    },
+    {
+      "id": 10,
+      "title": "The best Question Ever",
+      "price": 200.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320472298l/911765.jpg",
+      "rating": {
+        "rate": 3.8,
+        "count": 120
+      }
+    },
+    {
+      "id": 11,
+      "title": "The Best Food Blog",
+      "price": 200.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://th.bing.com/th/id/R.e17ef30ba1d1852a7558d2d0e5f19314?rik=LGTcBHd5ZLoVpw&riu=http%3a%2f%2fgolubkakitchen.com%2fwp-content%2fuploads%2f2016%2f06%2fSAV_BFBA_FINALIST_2014.jpg%3fx75209&ehk=bIQAqPIzWVjaqvzFZJJfEDAMh8cg7U8ouu7rsSGDDNg%3d&risl=&pid=ImgRaw&r=0",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 12,
+      "title": "Motivational Help",
+      "price": 200.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51xOw1bTVhL.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 170
+      }
+    },
+    {
+      "id": 13,
+      "title": "Why the Wind Blows",
+      "price": 200.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "inspirational",
+      "image": "https://th.bing.com/th/id/OIP._H1WfMsMBFdIJx1Q4hlJzAHaJ4?pid=ImgDet&w=600&h=800&rs=1",
+      "rating": {
+        "rate": 3.5,
+        "count": 120
+      }
+    },
+    {
+      "id": 14,
+      "title": "Big Magic",
+      "price": 1000.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "religion",
+      "image": "https://gospelthemes.com/wp-content/uploads/2020/11/Big-Magic-by-Elizabeth-Gilbert-Best-Spiritual-Books-of-All-Time-1-1348x2048.jpg",
+      "rating": {
+        "rate": 5,
+        "count": 130
+      }
+    },
+    {
+      "id": 15,
+      "title": "Living Close To God",
+      "price": 1000,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "religion",
+      "image": "https://th.bing.com/th/id/R.c640138655bfbc8609828552e43dc15a?rik=c%2by0eujxSodT%2bg&riu=http%3a%2f%2fwww.oprah.com%2fg%2fimage-resizer%3fwidth%3d670%26link%3dhttp%3a%2f%2fstatic.oprah.com%2fimages%2f201404%2fomag%2f201404-omag-soulful-1-284xfall.jpg&ehk=GtNa02%2f6of3A36sm5U7H1UnYHHlgM0qWCQdQgRDyJM4%3d&risl=&pid=ImgRaw&r=01",
+      "rating": {
+        "rate": 5,
+        "count": 190
+      }
+    },
+    {
+      "id": 16,
+      "title": "Power Of now",
+      "price": 1200.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "religion",
+      "image": "https://www.tckpublishing.com/wp-content/uploads/2017/10/Peace-Is-Power.jpg",
+      "rating": {
+        "rate": 3,
+        "count": 110
+      }
+    },
+    {
+      "id": 17,
+      "title": "Peace is power",
+      "price": 1800.15,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "religion",
+      "image": "https://th.bing.com/th/id/OIP.3OqWEJxX7mtCkdOdp5KQyQAAAA?pid=ImgDet&w=216&h=338&rs=1",
+      "rating": {
+        "rate": 4,
+        "count": 150
+      }
+    },
+    {
+      "id": 18,
+      "title": "Tower oF Light",
+      "price": 900.7,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "religion",
+      "image": "https://th.bing.com/th/id/OIP.abKM5-zVgwMhR6ImRjU6cgHaLb?pid=ImgDet&rs=1",
+      "rating": {
+        "rate": 5,
+        "count": 160
+      }
+    },
+    {
+      "id": 19,
+      "title": "Educational Reserch",
+      "price": 1700,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "educational",
+      "image": "https://brill.com/cover/covers/9789004407381.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 110
+      }
+    },
+    {
+      "id": 20,
+      "title": "Online Learning in higher Education",
+      "price": 1400,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "educational",
+      "image": "https://libribook.com/Images/online-learning-higher-education-pdf.jpg",
+      "rating": {
+        "rate": 3.7,
+        "count": 190
+      }
+    },
+    {
+      "id": 21,
+      "title": "Python Application",
+      "price": 400,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "educational",
+      "image": "https://i.pinimg.com/originals/28/63/b5/2863b52c34f4c7a82f0c83043c001b47.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 170
+      }
+    }
+  ]
+}

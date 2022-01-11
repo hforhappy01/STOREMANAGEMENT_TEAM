@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+<body>
+    
+<app-header></app-header>
+<div class="card-top container-fluid" style="margin-top: 0px;padding: 20px; background-color: rgb(191, 209, 29)">
+    <div class="container d-flex" style="margin-left: 20px;">
+        <div class="item">
+            <a (click)="filter('')">
+                <img src="https://thumbs.dreamstime.com/b/hands-book-logo-illustration-art-isolated-background-31900470.jpg" alt="">
+                <h6>All Books</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('inspirational')">
+                <img src="https://th.bing.com/th/id/R.a1c6fd95cab16c0cf3cd6f6c72d7846b?rik=8AMd8O3LeDKDfw&riu=http%3a%2f%2fberniesbooks.com%2fbernies_books%2fwp-content%2fuploads%2f2013%2f04%2fphotodune-1237368-business-books-with-money-s.jpg&ehk=S9%2fFC6vNHo3nYvkIpHbuMugj7q6%2btp6sT9Vt4q4huX8%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <h6>Inspirational</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('educational')">
+                <img src="https://th.bing.com/th/id/R.db38068fb53dd764cce16b6823342b75?rik=TG1K0V%2fXa6ZRxQ&riu=http%3a%2f%2fbluecerealeducation.com%2fsites%2fdefault%2ffiles%2fBooksTeacherStuff.jpg&ehk=XovASCIMff5yQfk1%2fB2M5djooYKhnKWyonBUj1ShMxM%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="">
+                <h6>Education and Teaching</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('religion')">
+                <img style="width: 62px; margin-top: 5px;" src="https://i1.wp.com/redeeminggod.com/wp-content/uploads/2014/06/religious-books.jpg?fit=1200%2C900&ssl=1" alt="">
+                <h6>Religion and Sprirituality</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="" style="margin-left: 100px;">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch; color: blue;font-weight: bold;text-align: center;">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p ><strong>Price:</strong> ${{item.price}}</p>
+                <button class="btn btn-primary" style="background-color: rgb(233, 171, 90);" (click)=addtocart(item)>Add to cart</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>
+</body>
+</html>

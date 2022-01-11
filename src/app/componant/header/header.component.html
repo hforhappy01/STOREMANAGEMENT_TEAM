@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<header>
+    <!-- <div style="background-color: burlywood;" class="navbar navbar-dark  shadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+            <i style="font-size: 40px;" class="fa fa-book">&nbsp;
+                
+            </i>
+            <strong style="font-size: 30px; color:rgb(3, 44, 41);font-family: Audiowide, sans-serif">BOOKTOWN</strong>
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+               
+            </div>
+            <!-- <span class="fas fa-search search-icon" ></span> -->
+
+
+        <!-- </div> -->
+        <!-- <button [routerLink]='["/cart"]' class="btn btn-warning">
+            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+        </button>
+    </div> --> 
+
+
+    <div style="background-color: burlywood;" class="navbar navbar-dark  shadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+            <!-- <i style="font-size: 40px;" class="fa fa-book">&nbsp;
+                
+            </i> -->
+            <strong style="font-size: 35px; color:rgb(118, 148, 146);font-family: Audiowide, sans-serif;"><span style="color: chocolate;">BOOK</span>TOWN</strong>
+            <div class="form-group" id="id1">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+               
+            </div>
+            <!-- <span class="fas fa-search search-icon" ></span> -->
+
+
+        </div>
+        <button [routerLink]='["/home"]' class="btn btn-link">HOME</button>
+        <button [routerLink]='["/product"]' class="btn btn-link">PRODUCT</button>
+        <button [routerLink]='["/login"]' class="btn btn-link">LOGIN</button>
+        <button [routerLink]='["/cart"]' class="btn btn-warning">
+            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+        </button>
+    </div>
+
+</header>

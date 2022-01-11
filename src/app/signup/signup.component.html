@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    <div class="container">
+             <div class="row">
+                 <div class="col-md-6">
+                     <div class="card">
+                         <div class="text-center">
+                     <h1>Signup</h1>
+                     <h6>Please enter the details</h6>
+                    </div> 
+             <form>
+                        <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                            <div class="mb-3">
+                              <label for="firstname1" class="form-label">First Name</label>
+                              <input formControlName="firstname1" type="text" class="form-control" id="firstname1" >
+                              
+                            </div>
+                            <div class="mb-3">
+                              <label for="lastname1" class="form-label">Last Name</label>
+                              <input formControlName="lastname1" type="text" class="form-control" id="lastname1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mobile1" class="form-label">Mobile No.</label>
+                                <input formControlName="mobile1" type="number" class="form-control" id="mobile1">
+                              </div>
+                              <div class="mb-3">
+                                <label for="email1" class="form-label">Email</label>
+                                <input formControlName="email1" type="email" class="form-control" id="email1">
+                              </div>
+                              <div class="mb-3">
+                                <label for="password1" class="form-label">Password</label>
+                                <input formControlName="password1"  type="password" class="form-control" id="password1">
+                              </div>
+                        
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            <a [routerLink]="['/login']"> <p style="color: brown;text-decoration:underline; margin-top: 20px;">Already have an accout??</p></a>
+                        
+                                                      </form>   </div>
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+             
+               
+
+
+
+</body>
+</html>

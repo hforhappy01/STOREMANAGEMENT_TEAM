@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminDashboard</title>
+</head>
+<body>
+ <nav class="navbar navbar-light bg-primary">
+<div class="container-fluid">
+    <h1>Admin Dashboard</h1>
+
+    <div class="d-flex">
+        <button class="btn btn-success" data-bs-toggle='modal' data-bs-target="#exampleModal"  (click)="clickAddBook()">Add Book</button>
+        <button class="btn btn-dark" style="margin-left: 4px;" >  <a [routerLink]="('/login')"> LOGOUT</a></button> 
+        
+    </div>
+</div>
+ </nav>  
+ <table class="table mt-5">
+     
+         <thead>
+             <th  scope="col">BOOK ID</th>
+             <th scope="col"> BOOK NAME</th>
+             <th scope="col"> BOOK CATAGORY</th>
+             <th scope="col">BOOK PRICE(RS.)</th>
+            
+             <!-- <th scope="col">BOOK AUTHOR </th> -->
+             <th scope="col">BOOK AUTHOR</th>
+             <th scope="col"> ACTION</th>
+</thead>
+     
+<tbody>
+<tr *ngFor="let row of bookdata">
+    <td>{{row.id}}</td>
+    <td>{{row.bookname}}</td>
+    <td>{{row.bookcatagory}}</td>
+    <td>{{row.bookprice}}</td>
+  <td>{{row.bookauthor}}</td>
+  <!-- <td>{{row.bookimage}}</td> -->
+    <!-- <td>Priya</td> -->
+    
+    <td>
+        <button class= "btn-info"  data-bs-toggle='modal' data-bs-target="#exampleModal" (click)="onEdit(row)">EDIT</button>
+        <button class="btn-danger mx-3" (click)="deleteBooks(row)" >DELETE</button>
+    </td>
+</tr>
+</tbody>
+ </table> 
+
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookdetail">BOOK DETAILS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="FormValue">
+                <div class="mb-3">
+                  <label for="id" class="form-label">BOOK ID </label>
+                  <input formControlName="id" type="number" class="form-control" id="id" >
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="bookname" class="form-label">BOOK NAME</label>
+                  <input formControlName="bookname"  type="text" class="form-control" id="bookname">
+                </div>
+                <div class="mb-3">
+                    <label for="bookcatagory" class="form-label">BOOK CATAGORY</label>
+                    <input type="text" formControlName="bookcatagory" class="form-control" id="bookcatagory" >
+                  
+                  </div>
+                  <div class="mb-3">
+                    <label for="bookprice" class="form-label">BOOK PRICE</label>
+                    <input type="number" formControlName="bookprice" class="form-control" id="bookprice">
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="bookauthor" class="form-label">AUTHOR'S NAME</label>
+                    <input type="text" formControlName="bookauthor" class="form-control" id="bookauthor" >
+                   
+                  </div>
+                
+                   <!-- <div class="mb-3">
+                    <label for="bookimage" class="form-label">PURCHASED ON</label>
+                    <input type="file" formControlName="bookimage" class="form-control" id="bookimage" >
+                   
+                  </div> -->
+                 
+
+                
+           
+              </form>
+              <div class="modal-footer">
+                <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" *ngIf ="showadd" (click)="postbookdetails()">ADD</button>
+                <button type="button" class="btn btn-primary" (click)="updatebookdetails()">UPDATE</button>
+          
+        </div>
+                
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  
+
+</body>
+</html>

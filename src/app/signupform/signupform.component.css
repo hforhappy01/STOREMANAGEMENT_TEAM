@@ -1,0 +1,95 @@
+.form {
+    padding: 1.5rem;
+  }
+  .inputField {
+    margin: 2.5rem 0;
+  }
+  .input {
+    width: 100%;
+    margin: 0 0 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    outline: none;
+  }
+  .input:focus {
+    border-color: #00bafa;
+  }
+  .input:focus + label[placeholder]:before {
+    color: #00bafa;
+  }
+  .input:focus + label[placeholder]:before,
+  .input:valid + label[placeholder]:before {
+    transition-duration: 0.2s;
+    transform: translate(0, -2.5rem);
+  }
+  
+  .input:invalid + label[placeholder]:before {
+    content: attr(placeholder);
+    font-size: 1.2rem;
+  }
+  
+  .input + label[placeholder] {
+    display: block;
+    pointer-events: none;
+    line-height: 1rem;
+    margin-top: -4.9rem;
+    margin-bottom: 4rem;
+  }
+  
+  .input + label[placeholder]:before {
+    content: attr(placeholder);
+    display: inline-block;
+    margin: 0 1.5rem;
+    padding: 0 2px;
+    color: #898989;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out;
+    background-color: #fff;
+  }
+  
+  .grid .inputField {
+    margin: 0;
+  }
+  .flex {
+    display: flex;
+    margin: 2.5rem 0;
+  }
+  .button {
+    margin: 2.5rem 0;
+  }
+  button {
+    border: 0;
+    outline: 0;
+    color: #fff;
+    background-color: #00bafa;
+    cursor: pointer;
+  }
+  
+ 
+
+  .submitBtn[disabled] {
+    background-color: rgb(194, 194, 194);
+    pointer-events: none;
+  }
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+  .grid-1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-1x3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (max-width: 600px) {
+    label{
+width: 100%;
+
+    }
+    .input{
+
+      width: 100%;
+    }
+}

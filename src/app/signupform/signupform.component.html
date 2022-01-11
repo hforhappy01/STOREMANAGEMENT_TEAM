@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup form</title>
+</head>
+<body>
+
+<div class= "container" style="background-color:rgb(236, 243, 236);">
+<div class="form" style="width: 35%;margin-left: 30%;margin-top: 5%;">
+   <div style="text-align: center;">
+    <strong style="font-size: 35px; color:rgb(118, 148, 146);font-family: Audiowide, sans-serif;"><span style="color: chocolate;">BOOK</span>TOWN</strong></div>
+<form #contactForm="ngForm" (ngSubmit)="submit(contactForm.value)" >
+
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input required minlength="3" maxlength="10" ngModel name="firstName" type="text" #firstName="ngModel" class="form-control" id="firstName" placeholder="ENTER FIRST NAME">
+        <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
+            <div *ngIf="firstName.errors && firstName.errors['required']">First Name is required.</div>
+            <div *ngIf="firstName.errors && firstName.errors['minlength=1']">First Name is minimum {{ firstName.errors && firstName.errors['minlength'].requiredLength }} character.</div>
+            <div *ngIf="firstName.errors && firstName.errors['maxlength=15']">First Name is maximum 10 character.</div>
+        </div>
+    </div>
+       
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input required ngModel name="lastName" type="text" #lastName="ngModel" class="form-control" id="lastName" placeholder="ENTER  LAST NAME">
+        <div class="alert alert-danger" *ngIf="lastName.touched && !lastName.valid">
+            Last Name is required.
+        </div>
+        <div *ngIf="lastName.errors && lastName.errors['minlength=1']">last Name is minimum {{ lastName.errors && lastName.errors['minlength'].requiredLength }} character.</div>
+        <div *ngIf="lastName.errors && lastName.errors['maxlength=15']">last Name is maximum 10 character.</div>
+    </div>
+       
+    <div class="form-group">
+        <label for="mobile">Mobile No.</label>
+        <input required ngModel name="mobile" type="number" #mobile="ngModel" class="form-control" id="mobile" placeholder="ENTER  MOBILE NO.">
+        <div class="alert alert-danger" *ngIf="mobile.touched && !mobile.valid">
+            Mobile No. is required.
+        </div>
+        <div *ngIf="mobile.errors && mobile.errors['minlength=1']">mobile no .10 {{ mobile.errors && mobile.errors['minlength'].requiredLength }} digit</div>
+    </div>
+    <div class="form-group">
+        <label for="emialName">Email Id</label>
+        <input required ngModel name="email" type="text" #email="ngModel" class="form-control"  id="email"  pattern="[^ @]*@[^ @]*" placeholder="ENTER  EMAIL ID">
+        <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
+           Email is required.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input required ngModel name="password" type="password" #password="ngModel" class="form-control" id="password" placeholder="ENTER  PASSWORD">
+        <div class="alert alert-danger" *ngIf="password.touched && !password.valid">
+            Password is required.
+        </div>
+    </div>
+
+    <!-- <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea required ngModel #comment="ngModel" name="comment" id="comment" cols="30" rows="10" class="form-control"></textarea>
+        <div class="alert alert-danger" *ngIf="comment.touched && !comment.valid">
+            Comment is required.
+        </div>
+    </div> -->
+        
+    <button class="btn btn-primary" type="submit" [class.disabled]="!contactForm.valid">Submit</button>
+      
+  </form><br>
+ <p style="text-align: center;"> <a [routerLink]='["/login"]'>Already Registered?? LOGIN TO <span style="color: crimson;"> BOOKTOWN</span></a></p>
+</div></div>
+</body>
+</html>
